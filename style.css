@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #0D192C;
+    font-family: 'Pixelify Sans', cursive;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    background-color: #15263F;
+    border-radius: 15px;
+    padding: 24px;
+    width: 350px;
+
+}
+
+
+h1{
+    color: aquamarine;
+    font-size: 28px;
+    text-align: center;
+
+}
+
+h2{
+    margin-top: 193px;
+    font-family: 'Pixelify Sans', cursive;
+    color: aquamarine;
+    font-size: 24px;
+}
+
+.inputs{
+   display: flex;
+   margin-top: 30px;
+   gap: 20px;
+
+}
+input{
+    width: 50%;
+    padding: 19px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+ 
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button{
+    display: none;
+}
+
+
+input[type=number]:focus {
+    width: 50%;
+    }
+
+#submit {
+    background-color: #0D192C; 
+    padding: 19px 32px;
+    color: aquamarine;
+    cursor: pointer;
+    border:none;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+
+#submit:hover {
+    background: #290223;
+    transition: 0.5s;
+}
+.p{
+    color: aquamarine;
+    font-size: 28px;
+    margin-top: 20px;
+}
+
