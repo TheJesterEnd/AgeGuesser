@@ -10,7 +10,7 @@ body{
     align-items: center;
     min-height: 100vh;
     background-color: #0D192C;
-    font-family: 'Pixelify Sans', cursive;
+    font-family: 'Pixelify Sans', sans-serif;
 }
 
 .main{
