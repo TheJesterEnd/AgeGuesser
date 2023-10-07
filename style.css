@@ -1,84 +1,94 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    }
-
-body{
+  }
+  
+  body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #0D192C;
-    font-family: 'Pixelify Sans', sans-serif;
-}
-
-.main{
+    background-color: #0d192c;
+    font-family: "Pixelify Sans", sans-serif;
+  }
+  
+  .main {
     display: flex;
     flex-direction: column;
-    background-color: #15263F;
+    justify-content: space-between;
+    background-color: #15263f;
     border-radius: 15px;
     padding: 24px;
     width: 350px;
-
-}
-
-
-h1{
+    min-height: 468.2px;
+  }
+  
+  h1 {
     color: aquamarine;
     font-size: 28px;
     text-align: center;
-
-}
-
-h2{
-    margin-top: 193px;
+  }
+  
+  h2 {
     color: aquamarine;
     font-size: 24px;
-}
-
-.inputs{
-   display: flex;
-   margin-top: 30px;
-   gap: 20px;
-
-}
-input{
+  }
+  
+  .inputs {
+    display: flex;
+    margin-top: 30px;
+    gap: 20px;
+  }
+  input {
     width: 50%;
     padding: 19px;
     border-radius: 5px;
     border: none;
     outline: none;
-}
- 
-input::-webkit-inner-spin-button,
-input::-webkit-outer-spin-button{
+  }
+  
+  input::-webkit-inner-spin-button,
+  input::-webkit-outer-spin-button {
     display: none;
-}
-
-
-input[type=number]:focus {
+  }
+  
+  input[type="number"]:focus {
     width: 50%;
-    }
-
-#submit {
-    background-color: #0D192C; 
+  }
+  
+  #submit {
+    background-color: #0d192c;
     padding: 19px 32px;
     color: aquamarine;
     cursor: pointer;
-    border:none;
+    border: none;
     border-radius: 5px;
     font-family: inherit;
-}
-
-
-#submit:hover {
+  }
+  
+  #submit:hover {
     background: #290223;
     transition: 0.5s;
-}
-.p{
+  }
+  
+  .bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     color: aquamarine;
     font-size: 28px;
     margin-top: 20px;
-}
-
+  }
+  
+  #languageButton {
+    width: 30px;
+    height: 28px;
+    background-color: #0d192c;
+    color: aquamarine;
+    border-radius: 5px;
+    border: none;
+    font-family: inherit;
+    cursor: pointer;
+    
+  }
