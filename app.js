@@ -30,10 +30,10 @@ function myFunction() {
         const age = currentYear - birthYear;
 
         pElement.style.color = "aquamarine";
-        pElement.textContent = isGeorgian ? `ასაკი: ${age}` : `AGE: ${age}`;
+        pElement.textContent =  `ასაკი: ${age}`;
 
     } else if (birthYearInput.value === "") {
-        pElement.textContent = isGeorgian ? `ასაკი: ${age}` : `AGE: ${age}`;
+        pElement.textContent =  `AGE: ${age}`;
     } else {
         pElement.style.color = "red";
         pElement.textContent = isGeorgian ? "გთხოვთ შეიყვანოთ სწორი დაბადების წელი." : "Please Enter a valid birth year.";
