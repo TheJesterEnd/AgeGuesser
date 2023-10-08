@@ -12,12 +12,12 @@ function toggleLanguage() {
     if (isGeorgian) {
         h1Element.textContent = "მოდი გამოვიცნობ შენს ასაკს";
         h2Element.textContent = "შეიყვანე შენი დაბადების წელი";
-        pElement.textContent = isGeorgian ? "ასაკი:" : "AGE:";
+        pElement.textContent = "ასაკი:" ;
         languageButton.textContent = "EN";
     } else {
         h1Element.textContent = "Let Me Guess Your AGE";
         h2Element.textContent = "Enter Your Birth Year";
-        pElement.textContent = isGeorgian ? "ასაკი:" : "AGE:";
+        pElement.textContent = "AGE:";
         languageButton.textContent = "KA";
     }
 }
@@ -30,10 +30,10 @@ function myFunction() {
         const age = currentYear - birthYear;
 
         pElement.style.color = "aquamarine";
-        pElement.textContent =  `ასაკი: ${age}`;
+        pElement.textContent = isGeorgian ? `ასაკი: ${age}` : `AGE: ${age}`;
 
     } else if (birthYearInput.value === "") {
-        pElement.textContent =  `AGE: ${age}`;
+        pElement.textContent = isGeorgian ? `ასაკი: ${age}` : `AGE: ${age}`;
     } else {
         pElement.style.color = "red";
         pElement.textContent = isGeorgian ? "გთხოვთ შეიყვანოთ სწორი დაბადების წელი." : "Please Enter a valid birth year.";
@@ -41,6 +41,7 @@ function myFunction() {
 }
 
 document.getElementById("submit").addEventListener("click", myFunction);
+
 
 
 
