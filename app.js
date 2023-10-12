@@ -13,12 +13,12 @@ function toggleLanguage() {
   if (isGeorgian) {
     h1Element.textContent = "მოდი გამოვიცნობ შენს ასაკს";
     h2Element.textContent = "შეიყვანე შენი დაბადების წელი";
-    pElement.textContent = "ასაკი: " + age;
+    pElement.textContent = "ასაკი: " + (age === undefined ? "" :age)
     languageButton.textContent = "EN";
   } else {
     h1Element.textContent = "Let Me Guess Your AGE";
     h2Element.textContent = "Enter Your Birth Year";
-    pElement.textContent = "AGE: " + age;
+    pElement.textContent = "AGE: " + (age === undefined ? "" :age)
     languageButton.textContent = "KA";
   }
 }
